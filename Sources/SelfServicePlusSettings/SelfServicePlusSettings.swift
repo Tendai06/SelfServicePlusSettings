@@ -128,7 +128,7 @@ public class SelfServicePlusSettingsManager {
     // MARK: - UI Hiding Settings
     
     public func shouldHideConnectMenubar() -> Bool {
-        return getValue(for: SelfServicePlusConfigurationKeys.hideConnectMenubar, defaultValue: false)
+        return getValue(for: SelfServicePlusConfigurationKeys.hideConnectMenubar, defaultValue: true)
     }
     
     public func shouldHideSecurityDashboard() -> Bool {
