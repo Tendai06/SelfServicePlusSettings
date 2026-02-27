@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SelfServicePlusSettings}",
+            "name": "Debug VerifySelfServicePlusSettings",
+            "target": "VerifySelfServicePlusSettings",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug VerifySelfServicePlusSettings"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SelfServicePlusSettings}",
+            "name": "Release VerifySelfServicePlusSettings",
+            "target": "VerifySelfServicePlusSettings",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release VerifySelfServicePlusSettings"
+        }
+    ]
+}

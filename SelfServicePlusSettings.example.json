@@ -1,0 +1,41 @@
+{
+  "_comment": "Self Service+ Settings Configuration Example",
+  "_description": "This file demonstrates all available configuration options for Self Service+",
+  "_deploymentNote": "For non-managed deployments, place this file at ~/Documents/SelfServicePlusSettings.json",
+  
+  "HideConnectMenubar": false,
+  "HideSecurityDashboard": false,
+  "HideApplicationsSection": false,
+  "HidePatchManagementSection": false,
+  "HideRemoteAssistanceSection": false,
+  "HideDeviceComplianceSection": false,
+  
+  "EnableSingleSignOn": true,
+  "AutoLogoutTimeInterval": 3600,
+  "RequirePasswordOnLogin": true,
+  "AllowUserAccountCreation": true,
+  
+  "BrandingName": "Acme Corporation Self Service",
+  "BrandingLogoURL": "https://example.com/logo.png",
+  "BrandingThemeColor": "#0070f3",
+  
+  "EnableAdvancedFeatures": false,
+  "EnableBetaFeatures": false,
+  "CustomMenuItems": [
+    {
+      "name": "Company Portal",
+      "url": "https://portal.company.com",
+      "icon": "globe"
+    },
+    {
+      "name": "IT Help Desk",
+      "url": "https://helpdesk.company.com",
+      "icon": "questionmark.circle"
+    }
+  ],
+  "AdditionalCapabilities": ["remote-desktop", "file-vault-recovery"],
+  
+  "DisableAnalytics": false,
+  "DisableAllDataCollection": false,
+  "DisableSentryLogging": false
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <!-- App Group Configuration for Self Service+ -->
+            <key>PayloadType</key>
+            <string>com.apple.ManagedClient.preferences</string>
+            <key>PayloadIdentifier</key>
+            <string>group.com.jamf.selfserviceplus</string>
+            <key>PayloadUUID</key>
+            <string>REPLACE_WITH_UNIQUE_UUID</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadDisplayName</key>
+            <string>Self Service+ Settings</string>
+            <key>PayloadDescription</key>
+            <string>Configuration settings for Self Service+ application suite</string>
+            <key>PayloadOrganization</key>
+            <string>Your Organization Name</string>
+            
+            <!-- UI Hiding Configuration -->
+            <key>HideConnectMenubar</key>
+            <false/>
+            <key>HideSecurityDashboard</key>
+            <false/>
+            <key>HideApplicationsSection</key>
+            <false/>
+            <key>HidePatchManagementSection</key>
+            <false/>
+            <key>HideRemoteAssistanceSection</key>
+            <false/>
+            <key>HideDeviceComplianceSection</key>
+            <false/>
+            
+            <!-- Account Management Configuration -->
+            <key>EnableSingleSignOn</key>
+            <true/>
+            <key>AutoLogoutTimeInterval</key>
+            <real>3600</real>
+            <key>RequirePasswordOnLogin</key>
+            <true/>
+            <key>AllowUserAccountCreation</key>
+            <true/>
+            
+            <!-- Branding Configuration -->
+            <key>BrandingName</key>
+            <string>Acme Corporation Self Service</string>
+            <key>BrandingLogoURL</key>
+            <string>https://your-company.com/logo.png</string>
+            <key>BrandingThemeColor</key>
+            <string>#0070f3</string>
+            
+            <!-- Feature Configuration -->
+            <key>EnableAdvancedFeatures</key>
+            <false/>
+            <key>EnableBetaFeatures</key>
+            <false/>
+            <key>CustomMenuItems</key>
+            <array>
+                <dict>
+                    <key>name</key>
+                    <string>Company Portal</string>
+                    <key>url</key>
+                    <string>https://portal.company.com</string>
+                    <key>icon</key>
+                    <string>globe</string>
+                </dict>
+                <dict>
+                    <key>name</key>
+                    <string>IT Help Desk</string>
+                    <key>url</key>
+                    <string>https://helpdesk.company.com</string>
+                    <key>icon</key>
+                    <string>questionmark.circle</string>
+                </dict>
+            </array>
+            <key>AdditionalCapabilities</key>
+            <array>
+                <string>remote-desktop</string>
+                <string>file-vault-recovery</string>
+            </array>
+            
+            <!-- Analytics and Data Collection Configuration (Secret Keys) -->
+            <!-- These keys are for advanced configuration only -->
+            <!-- Uncomment and set to true only if you need to disable data collection -->
+            <!--
+            <key>DisableAnalytics</key>
+            <false/>
+            <key>DisableAllDataCollection</key>
+            <false/>
+            <key>DisableSentryLogging</key>
+            <false/>
+            -->
+        </dict>
+    </array>
+    
+    <!-- Root Payload Configuration -->
+    <key>PayloadDescription</key>
+    <string>Configures Self Service+ application settings across all capabilities</string>
+    <key>PayloadDisplayName</key>
+    <string>Self Service+ Configuration</string>
+    <key>PayloadIdentifier</key>
+    <string>com.yourorg.selfserviceplus.config</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>REPLACE_WITH_ROOT_UUID</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadOrganization</key>
+    <string>Your Organization Name</string>
+</dict>
+</plist>
